@@ -21,6 +21,7 @@ function draw() {
   if (distance <= maxAllowedDistance) {
     noStroke();
     fill(180, 96, 5);
+    // Centering the circle
     circle(mouseX, mouseY, thirdCircleRadius);
   } else {
     let angle = atan2(mouseY - (windowHeight / 16 + yOffset), mouseX - windowWidth / 2);
@@ -29,6 +30,7 @@ function draw() {
     
     noStroke();
     fill(180, 96, 5);
+    // Centering the circle
     circle(maxX, maxY, thirdCircleRadius);
   }
 }
