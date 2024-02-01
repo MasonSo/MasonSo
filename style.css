@@ -1,5 +1,9 @@
-.nunito {
+
+
+/* --------------------------home-page-------------------------------------*/
+.nunito-title {
 font-family: 'Nunito', sans-serif;
+  font-size: 3vw;
 }
 
 .container {
@@ -7,6 +11,14 @@ font-family: 'Nunito', sans-serif;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+#centeredText {
+  position: fixed; /* Position the text relative to the viewport */
+  top: 50%; /* Align the top of the text to the vertical center of the viewport */
+  left: 50%; /* Align the left of the text to the horizontal center of the viewport */
+  transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
+  text-align: center; /* Center the text horizontally */
 }
 
 .circular-button {
@@ -20,6 +32,27 @@ font-family: 'Nunito', sans-serif;
    cursor: none;
 }
 
-.hidden {
-  display: none;
+#textContainer {
+  display: none; /* Hide the text initially */
 }
+
+/* Show the text */
+#textContainer.visible {
+  display: flex; /* Show the text when 'visible' class is applied */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.visible {
+  animation: fadeIn 0.5s ease forwards; /* Apply the fade-in animation */
+}
+
+
+/* --------------------------about-page-------------------------------------*/
