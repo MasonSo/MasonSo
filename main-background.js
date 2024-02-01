@@ -1,8 +1,13 @@
 let font;
-let showText = false;
+let showText = 0;
 let r1 = 180;
 let g1 = 96;
 let b1 = 5;
+
+function toggleText() {
+  var textContainer = document.getElementById("textContainer");
+  textContainer.classList.toggle("hidden");
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -16,13 +21,13 @@ function draw() {
   noStroke();
   
   // Draw first circle
-  if (!showText) {
+  if (showText = 0) {
     fill(180, 96, 5);
     circle(windowWidth / 2, windowHeight / 2, windowWidth / 12);
   }
   
   // Draw second circle
-  if (!showText) {
+  if (showText = 0) {
     fill(237, 231, 230);
     circle(windowWidth / 2, windowHeight / 2, windowWidth / 12.8);
   }
