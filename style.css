@@ -21,10 +21,6 @@ font-family: 'Nunito', sans-serif;
   transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
   text-align: center; /* Center the text horizontally */
 }
-#centerText {
-  position: fixed; /* Position the text relative to the viewport */
-  text-align: center; /* Center the text horizontally */
-}
 
 .circular-button {
   width: 7.81vw; /* Adjust button size */
@@ -67,6 +63,12 @@ font-family: 'Nunito', sans-serif;
   font-family: 'Nunito', sans-serif;
     font-size: 3vw;
   z-index: 2;
+}
+#centerText {
+  position: fixed; /* Position the text relative to the viewport */
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text horizontally */
+   left: 5vw;
 }
 
 
