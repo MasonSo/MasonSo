@@ -32,26 +32,28 @@ font-family: 'Nunito', sans-serif;
    cursor: none;
 }
 
-#textContainer {
+.hidden {
   display: none; /* Hide the text initially */
 }
 
-/* Show the text */
-#textContainer.visible {
+.hidden.visible {
   display: flex; /* Show the text when 'visible' class is applied */
 }
 
 @keyframes fadeIn {
-  from {
+0%{
     opacity: 0;
   }
-  to {
+100%{
     opacity: 1;
   }
 }
 
 .visible {
-  animation: fadeIn 0.5s ease forwards; /* Apply the fade-in animation */
+  animation: fadeIn;
+    animation-duration: .5s; /* Animation duration */
+  animation-timing-function: ease; /* Timing function */
+  animation-iteration-count: forwards; /* Apply the fade-in animation */
 }
 
 
