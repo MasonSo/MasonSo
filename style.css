@@ -3,7 +3,7 @@
 /* --------------------------home-page start-------------------------------------*/
 .nunito-title h1 {
 font-family: 'Nunito', sans-serif;
-  font-size: 4vw;
+  font-size: 5vw;
   z-index: 2;
 }
 
@@ -11,6 +11,25 @@ font-family: 'Nunito', sans-serif;
 font-family: 'Nunito', sans-serif;
   font-size: 3vw;
   z-index: 2;
+}
+
+.nunito-text button {
+font-family: 'Nunito', sans-serif;
+  font-size: 3vw;
+   background-color: transparent;
+    border: none;
+  cursor: none;
+  z-index: 2;
+}
+
+.nunito-text button:hover {
+font-family: 'Nunito', sans-serif;
+  font-size: 3vw;
+   background-color: transparent;
+    border: none;
+  cursor: none;
+  z-index: 2;
+  color: #B46005;
 }
 
 .container {
@@ -43,7 +62,7 @@ font-family: 'Nunito', sans-serif;
   position: fixed; /* Position the text relative to the viewport */
   top: 50%; /* Align the top of the text to the vertical center of the viewport */
   left: 5%; /* Align the left of the text to the horizontal center of the viewport */
-  transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
+   /* Move the text back by half of its own width and height */
   text-align: center; /* Center the text horizontally */
 }
 
@@ -55,6 +74,18 @@ font-family: 'Nunito', sans-serif;
 .visible {
    display: flex; /* Show the text when 'visible' class is applied */
   animation: fadeIn;
+    animation-duration: 1s; /* Animation duration */
+  animation-timing-function: ease; /* Timing function */
+  animation-iteration-count: forwards; /* Apply the fade-in animation */
+}
+
+.hidden2 {
+  display: none; /* Hide the text initially */
+}
+
+.visible2 {
+   display: flex; /* Show the text when 'visible' class is applied */
+  animation: slideUp;
     animation-duration: 1s; /* Animation duration */
   animation-timing-function: ease; /* Timing function */
   animation-iteration-count: forwards; /* Apply the fade-in animation */
@@ -76,4 +107,16 @@ font-family: 'Nunito', sans-serif;
     opacity: 1;
   }
 }
+
+@keyframes slideUp {
+0%{
+    opacity: 0;
+  transform: translateY(100%);
+  }
+100%{
+    opacity: 1;
+   transform: translateY(0%);
+  }
+}
+
 
