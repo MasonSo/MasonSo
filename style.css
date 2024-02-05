@@ -7,19 +7,17 @@ font-family: 'Nunito', sans-serif;
   z-index: 2;
 }
 
+.nunito-text {
+font-family: 'Nunito', sans-serif;
+  font-size: 3vw;
+  z-index: 2;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-#centeredTitle {
-  position: fixed; /* Position the text relative to the viewport */
-  top: 50%; /* Align the top of the text to the vertical center of the viewport */
-  left: 50%; /* Align the left of the text to the horizontal center of the viewport */
-  transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
-  text-align: center; /* Center the text horizontally */
 }
 
 .circular-button {
@@ -31,6 +29,22 @@ font-family: 'Nunito', sans-serif;
   font-size: 16px; /* Text size */
   border: none; /* Remove border */
    cursor: none;
+}
+
+#centerText {
+  position: fixed; /* Position the text relative to the viewport */
+  top: 50%; /* Align the top of the text to the vertical center of the viewport */
+  left: 50%; /* Align the left of the text to the horizontal center of the viewport */
+  transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
+  text-align: center; /* Center the text horizontally */
+}
+
+#leftText {
+  position: fixed; /* Position the text relative to the viewport */
+  top: 50%; /* Align the top of the text to the vertical center of the viewport */
+  left: 5%; /* Align the left of the text to the horizontal center of the viewport */
+  transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
+  text-align: center; /* Center the text horizontally */
 }
 
 .hidden {
@@ -48,6 +62,7 @@ font-family: 'Nunito', sans-serif;
 
 
 /* --------------------------home-page activated-------------------------------------*/
+
 
 
 

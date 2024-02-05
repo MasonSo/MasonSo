@@ -11,6 +11,7 @@ function toggleText() {
   var textContainer = document.getElementById("textContainer");
   textContainer.classList.toggle("visible");
   
+  
 }
 
 function setup() {
