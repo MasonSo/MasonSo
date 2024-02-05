@@ -51,7 +51,7 @@ font-family: 'Nunito', sans-serif;
     transform: translateY(100%);
     opacity: 0;
   }
-  90% {
+  10% {
     opacity: 1;
   }
   100% {
@@ -70,7 +70,7 @@ font-family: 'Nunito', sans-serif;
 
 .visible2 {
    display: flex; /* Show the text when 'visible' class is applied */
-  animation: slideUp;
+  animation: fadeIn;
     animation-duration: 4s; /* Animation duration */
   animation-timing-function: ease; /* Timing function */
   animation-iteration-count: forwards; /* Apply the fade-in animation */
@@ -84,10 +84,10 @@ font-family: 'Nunito', sans-serif;
   z-index: 2;
 }
 #centerText {
- position: absolute;
-  bottom: 0; /* Position the text initially at the bottom */
-  left: 0;
-   transform: translateY(100%);
+  position: absolute; 
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text horizontally */
+   left: 5vw;
 }
 
 
