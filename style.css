@@ -37,6 +37,42 @@ font-family: 'Nunito', sans-serif;
   display: none; /* Hide the text initially */
 }
 
+
+.visible {
+   display: flex; /* Show the text when 'visible' class is applied */
+  animation: fadeIn;
+    animation-duration: 1s; /* Animation duration */
+  animation-timing-function: ease; /* Timing function */
+  animation-iteration-count: forwards; /* Apply the fade-in animation */
+}
+
+
+/* --------------------------home-page activated-------------------------------------*/
+#centeredText {
+  position: fixed; /* Position the text relative to the viewport */
+  top: 50%; /* Align the top of the text to the vertical center of the viewport */
+  left: 50%; /* Align the left of the text to the horizontal center of the viewport */
+  transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
+  text-align: center; /* Center the text horizontally */
+}
+
+.hidden2 {
+  display: none; /* Hide the text initially */
+}
+
+.visible2 {
+   display: flex; /* Show the text when 'visible' class is applied */
+  animation: fadeIn;
+    animation-duration: 4s; /* Animation duration */
+  animation-timing-function: ease; /* Timing function */
+  animation-iteration-count: forwards; /* Apply the fade-in animation */
+}
+
+
+
+
+/* --------------------------keyframes------------------------------------*/
+
 @keyframes fadeIn {
 0%{
     opacity: 0;
@@ -45,49 +81,4 @@ font-family: 'Nunito', sans-serif;
     opacity: 1;
   }
 }
-
-.visible {
-   display: flex; /* Show the text when 'visible' class is applied */
-  animation: fadeIn;
-    animation-duration: .5s; /* Animation duration */
-  animation-timing-function: ease; /* Timing function */
-  animation-iteration-count: forwards; /* Apply the fade-in animation */
-}
-
-
-/* --------------------------home-page activated-------------------------------------*/
-
-.title-effect {
-  overflow: hidden;
-  position: relative;
-  height: 40%; 
-  font-size: 120px;
-  color: red;
-  z-index: 2;
-}
-
-.title-effect h1 {
-  position: absolute;
-  bottom: 0%; 
-  left: 0%;
-  margin: 0;
-  padding: 0;
-  animation: slide-up 3s ease-in-out forwards 1s;
-  opacity: 0;
-}
-
-@keyframes slide-up {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
 
