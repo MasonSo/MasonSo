@@ -37,11 +37,11 @@ font-family: 'Nunito', sans-serif;
   display: none; /* Hide the text initially */
 }
 
-.hidden.visible {
+.visible {
   display: flex; /* Show the text when 'visible' class is applied */
 }
 
-.hidden.visible2 {
+.visible2 {
   display: flex; /* Show the text when 'visible' class is applied */
 }
 
@@ -100,17 +100,4 @@ font-family: 'Nunito', sans-serif;
 
 
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
 
