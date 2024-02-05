@@ -79,18 +79,6 @@ font-family: 'Nunito', sans-serif;
   animation-iteration-count: forwards; /* Apply the fade-in animation */
 }
 
-.hidden2 {
-  display: none; /* Hide the text initially */
-}
-
-.visible2 {
-   display: flex; /* Show the text when 'visible' class is applied */
-  animation: slideUp;
-    animation-duration: 1s; /* Animation duration */
-  animation-timing-function: ease; /* Timing function */
-  animation-iteration-count: forwards; /* Apply the fade-in animation */
-}
-
 
 /* --------------------------home-page activated-------------------------------------*/
 
