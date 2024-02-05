@@ -37,14 +37,6 @@ font-family: 'Nunito', sans-serif;
   display: none; /* Hide the text initially */
 }
 
-.visible {
-  display: flex; /* Show the text when 'visible' class is applied */
-}
-
-.visible2 {
-  display: flex; /* Show the text when 'visible' class is applied */
-}
-
 @keyframes fadeIn {
 0%{
     opacity: 0;
@@ -59,7 +51,7 @@ font-family: 'Nunito', sans-serif;
     transform: translateY(100%);
     opacity: 0;
   }
-  10% {
+  90% {
     opacity: 1;
   }
   100% {
@@ -69,6 +61,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 .visible {
+   display: flex; /* Show the text when 'visible' class is applied */
   animation: fadeIn;
     animation-duration: .5s; /* Animation duration */
   animation-timing-function: ease; /* Timing function */
@@ -76,6 +69,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 .visible2 {
+   display: flex; /* Show the text when 'visible' class is applied */
   animation: slideUp;
     animation-duration: 4s; /* Animation duration */
   animation-timing-function: ease; /* Timing function */
@@ -90,10 +84,10 @@ font-family: 'Nunito', sans-serif;
   z-index: 2;
 }
 #centerText {
-  position: fixed; /* Position the text relative to the viewport */
-  transform: translate(-50%, -50%);
-  text-align: center; /* Center the text horizontally */
-   left: 5vw;
+ position: absolute;
+  bottom: 0; /* Position the text initially at the bottom */
+  left: 0;
+   transform: translateY(100%);
 }
 
 
