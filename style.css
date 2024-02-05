@@ -1,7 +1,7 @@
 
 
 /* --------------------------home-page start-------------------------------------*/
-.nunito-title {
+.nunito-title h1 {
 font-family: 'Nunito', sans-serif;
   font-size: 4vw;
   z-index: 2;
@@ -48,26 +48,6 @@ font-family: 'Nunito', sans-serif;
 
 
 /* --------------------------home-page activated-------------------------------------*/
-#centeredText {
-  position: fixed; /* Position the text relative to the viewport */
-  top: 50%; /* Align the top of the text to the vertical center of the viewport */
-  left: 50%; /* Align the left of the text to the horizontal center of the viewport */
-  transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
-  text-align: center; /* Center the text horizontally */
-}
-
-.hidden2 {
-  display: none; /* Hide the text initially */
-}
-
-.visible2 {
-   display: flex; /* Show the text when 'visible' class is applied */
-  animation: fadeIn;
-    animation-duration: 4s; /* Animation duration */
-  animation-timing-function: ease; /* Timing function */
-  animation-iteration-count: forwards; /* Apply the fade-in animation */
-}
-
 
 
 
