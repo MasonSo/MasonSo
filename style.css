@@ -3,6 +3,8 @@
 /* --------------------------home-page start-------------------------------------*/
 .bungee {
   font-family: 'Bungee', sans-serif;
+    font-size: 10vw;
+  z-index: 1;
 }
 
 
