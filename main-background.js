@@ -58,9 +58,9 @@ function draw() {
   // Change color of third circle when mouse is over the second circle
   let d = dist(mouseX, mouseY, windowWidth / 2, windowHeight / 2);
   if (d < windowWidth / 25.6) {
-    r1 = 17;
-    g1 = 22;
-    b1 = 44;
+    r1 = 88;
+    g1 = 107;
+    b1 = 164;
     r2 = 180;
     g2 = 96;
     b2 = 5;
