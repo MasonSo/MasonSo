@@ -159,7 +159,78 @@ font-family: 'Nunito', sans-serif;
 
 .bitter-w{
   font-family: 'Bitter', serif;
-  
+  }
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for the container */
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for the flex container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style for each flex item */
+.flex-item {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
+  margin-bottom: 2%; /* Adjust spacing between rows */
+}
+
+/* Style for text on the left */
+.flex-item p {
+  margin-right: 2%; /* Adjust spacing between text and image */
+  width: 40%; /* Adjust width of text */
+}
+
+/* Style for image on the right */
+.flex-item img {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  width: 50%; /* Adjust width of image */
 }
 
 
