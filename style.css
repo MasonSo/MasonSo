@@ -22,7 +22,7 @@ font-family: 'Nunito', sans-serif;
    color: #586BA4;
 }
 
-.nunito-text button {
+.nunito-text-button {
 font-family: 'Nunito', sans-serif;
   font-size: 2.5vw;
    background-color: transparent;
@@ -32,7 +32,7 @@ font-family: 'Nunito', sans-serif;
   color: #586BA4;
 }
 
-.nunito-text button:hover {
+.nunito-text-button:hover {
 font-family: 'Nunito', sans-serif;
   font-size: 2.8vw;
    background-color: transparent;
@@ -40,11 +40,30 @@ font-family: 'Nunito', sans-serif;
   cursor: none;
   z-index: 2;
   color: #B46005;
-  content: "New Text";
 }
 
-.nunito-text button:hover::after {
+.nunito-text-button:hover::after {
    content: "!";
+}
+
+.nunito-text-button2 {
+font-family: 'Nunito', sans-serif;
+  font-size: 2vw;
+   background-color: transparent;
+    border: none;
+  cursor: none;
+  z-index: 2;
+  color: #586BA4;
+}
+
+.nunito-text-button2:hover {
+font-family: 'Nunito', sans-serif;
+  font-size: 2vw;
+   background-color: transparent;
+    border: none;
+  cursor: none;
+  z-index: 2;
+  color: #B46005;
 }
 
 .container {
@@ -89,7 +108,16 @@ font-family: 'Nunito', sans-serif;
   text-align: center; /* Center the text horizontally */
 }
 
-.hidden, .hidden1, .hidden2 {
+#bottomText {
+  position: fixed; /* Position the text relative to the viewport */
+  bottom: 3%; /* Align the top of the text to the vertical center of the viewport */
+  left: 50%; /* Align the left of the text to the horizontal center of the viewport */
+   /* Move the text back by half of its own width and height */
+  text-align: center; /* Center the text horizontally */
+  transform: translate(-50%, -50%);
+}
+
+.hidden, .hidden1, .hidden2, .hidden3 {
   display: none; /* Hide the text initially */
 }
 
@@ -118,6 +146,13 @@ font-family: 'Nunito', sans-serif;
   animation-iteration-count: forwards; /* Apply the fade-in animation */ 
 }
 
+.visible3 {
+  display: flex;
+  animation: fadeIn;
+    animation-duration: 1s; /* Animation duration */
+  animation-timing-function: ease; /* Timing function */
+  animation-iteration-count: forwards; /* Apply the fade-in animation */ 
+}
 
 /* --------------------------work-------------------------------------*/
 
