@@ -200,7 +200,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Style for the container */
-.container {
+.container-w {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
