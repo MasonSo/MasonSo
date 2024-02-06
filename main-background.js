@@ -6,6 +6,12 @@ let b1 = 5;
 let r2 = 237;
 let g2 = 231;
 let b2 = 230;
+let mouseXDelay = 0;
+let mouseYDelay = 0;
+let mouseXDelay2 = 0;
+let mouseYDelay2 = 0;
+let mouseXDelay3 = 0;
+let mouseYDelay3 = 0;
 
 function toggleText() {
   var textContainer = document.getElementById("textContainer");
@@ -49,13 +55,24 @@ function draw() {
   fill(r1, g1, b1);
   circle(mouseX, mouseY, windowWidth / 96);
 
-  // Show text if the second circle is pressed
-  // if (showText) {
-  //   fill(180, 96, 5);
-  //   text("mason so", windowWidth / 2, windowHeight / 2);
-  // }
-
-  // Change color of third circle when mouse is over the second circle
+    mouseXDelay += (mouseX - mouseXDelay) * 0.3;
+  mouseYDelay += (mouseY - mouseYDelay) * 0.3;
+  stroke(r1, g1, b1);
+  noFill();
+  circle(mouseXDelay, mouseYDelay, windowWidth / 60);
+  
+    mouseXDelay2 += (mouseX - mouseXDelay2) * 0.15;
+  mouseYDelay2 += (mouseY - mouseYDelay2) * 0.15;
+  stroke(r1, g1, b1);
+  noFill();
+  circle(mouseXDelay2, mouseYDelay2, windowWidth / 45);
+  
+      mouseXDelay3 += (mouseX - mouseXDelay3) * 0.08;
+  mouseYDelay3 += (mouseY - mouseYDelay3) * 0.08;
+  stroke(r1, g1, b1);
+  noFill();
+  circle(mouseXDelay3, mouseYDelay3, windowWidth / 35);
+  
   let d = dist(mouseX, mouseY, windowWidth / 2, windowHeight / 2);
   if (d < windowWidth / 25.6) {
     r1 = 88;
