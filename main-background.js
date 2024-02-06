@@ -13,7 +13,11 @@ function toggleText() {
   var textContainer1 = document.getElementById("textContainer1");
  setTimeout(function() {
         textContainer1.classList.toggle("visible1");
-    }, 2000);
+    }, 1000);
+    var textContainer2 = document.getElementById("textContainer2");
+ setTimeout(function() {
+        textContainer2.classList.toggle("visible2");
+    }, 1000);
 }
 
 
