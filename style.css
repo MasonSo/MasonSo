@@ -1,6 +1,11 @@
 
 
 /* --------------------------home-page start-------------------------------------*/
+.bungee {
+  font-family: 'Bungee', sans-serif;
+}
+
+
 .nunito-title h1 {
 font-family: 'Nunito', sans-serif;
   font-size: 5vw;
