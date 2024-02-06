@@ -10,6 +10,10 @@ let b2 = 230;
 function toggleText() {
   var textContainer = document.getElementById("textContainer");
   textContainer.classList.toggle("visible");
+  var textContainer1 = document.getElementById("textContainer1");
+ setTimeout(function() {
+        textContainer1.classList.toggle("visible1");
+    }, 2000);
 }
 
 

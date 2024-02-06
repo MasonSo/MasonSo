@@ -5,12 +5,14 @@
 font-family: 'Nunito', sans-serif;
   font-size: 5vw;
   z-index: 2;
+   color: #586BA4;
 }
 
 .nunito-text {
 font-family: 'Nunito', sans-serif;
   font-size: 3vw;
   z-index: 2;
+   color: #586BA4;
 }
 
 .nunito-text button {
@@ -20,6 +22,7 @@ font-family: 'Nunito', sans-serif;
     border: none;
   cursor: none;
   z-index: 2;
+  color: #586BA4;
 }
 
 .nunito-text button:hover {
@@ -66,7 +69,7 @@ font-family: 'Nunito', sans-serif;
   text-align: center; /* Center the text horizontally */
 }
 
-.hidden {
+.hidden, .hidden1 {
   display: none; /* Hide the text initially */
 }
 
@@ -77,6 +80,15 @@ font-family: 'Nunito', sans-serif;
     animation-duration: 1s; /* Animation duration */
   animation-timing-function: ease; /* Timing function */
   animation-iteration-count: forwards; /* Apply the fade-in animation */
+}
+
+.visible1 {
+  display: flex;
+  animation: fadeIn;
+    animation-duration: 1s; /* Animation duration */
+  animation-timing-function: ease; /* Timing function */
+  animation-iteration-count: forwards; /* Apply the fade-in animation */
+  
 }
 
 
@@ -96,15 +108,6 @@ font-family: 'Nunito', sans-serif;
   }
 }
 
-@keyframes slideUp {
-0%{
-    opacity: 0;
-  transform: translateY(100%);
-  }
-100%{
-    opacity: 1;
-   transform: translateY(0%);
-  }
-}
+
 
 
