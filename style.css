@@ -154,7 +154,7 @@ font-family: 'Nunito', sans-serif;
   animation-iteration-count: forwards; /* Apply the fade-in animation */ 
 }
 
-/* --------------------------work-------------------------------------*/
+/* --------------------------------work------------------------------------------------*/
 
 
 .bitter-w{
@@ -232,7 +232,10 @@ font-family: 'Nunito', sans-serif;
   width: 50%; /* Adjust width of image */
 }
 
-
+.fade-in{
+  
+  
+}
 
 
 
