@@ -1,56 +1,33 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/addons/p5.sound.min.js"
-    >
-      </scr
-    </script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        cursor: none;
-      }
-      canvas {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
-      rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Bungee&family=Nunito:wght@300&display=swap" rel="stylesheet"/>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    /* Additional styles for hiding/showing flex containers */
+    .container-w {
+      display: none; /* Initially hide flex containers */
+    }
+  </style>
+</head>
+<body>
 
-  </head>
-  <body>
 <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
-    <a href="#">Option 1</a>
-    <a href="#">Option 2</a>
-    <a href="#">Option 3</a>
+    <a href="#" onclick="showContainer(1)">video</a>
+    <a href="#" onclick="showContainer(2)">3D</a>
+    <a href="#" onclick="showContainer(3)">coding</a>
   </div>
 </div>
-    
-    
-<div class="container-w">
+
+<div class="container-w" id="container1">
   <div class="flex-container">
     <div class="flex-item">
       <p>Text on the left</p>
       <img src="image.jpg" alt="Image on the right">
     </div>
-    
-    <!-- Add more rows as needed -->
     <div class="flex-item">
       <p>Another text on the left</p>
       <img src="image2.jpg" alt="Another image on the right">
@@ -58,7 +35,45 @@
   </div>
 </div>
 
-    
-    
-  </body>
+<div class="container-w" id="container2">
+  <div class="flex-container">
+    <div class="flex-item">
+      <p>Text on the left</p>
+      <img src="image.jpg" alt="Image on the right">
+    </div>
+    <div class="flex-item">
+      <p>Another text on the left</p>
+      <img src="image2.jpg" alt="Another image on the right">
+    </div>
+  </div>
+</div>
+
+<div class="container-w" id="container3">
+    <div class="flex-container">
+    <div class="flex-item">
+      <p>poop</p>
+      <img src="image.jpg" alt="Image on the right">
+    </div>
+    <div class="flex-item">
+      <p>Another text on the left</p>
+      <img src="image2.jpg" alt="Another image on the right">
+    </div>
+  </div>
+</div>
+
+<script>
+  function showContainer(containerIndex) {
+    // Hide all flex containers
+    var containers = document.querySelectorAll('.container-w');
+    containers.forEach(function(container) {
+      container.style.display = 'none';
+    });
+
+    // Show the selected flex container
+    var selectedContainer = document.getElementById('container' + containerIndex);
+    selectedContainer.style.display = 'flex';
+  }
+</script>
+
+</body>
 </html>
