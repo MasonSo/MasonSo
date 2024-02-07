@@ -203,7 +203,6 @@ font-family: 'Nunito', sans-serif;
 .container-w {
   display: flex;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   height: 100vh; /* Full viewport height */
 }
 
@@ -216,7 +215,7 @@ font-family: 'Nunito', sans-serif;
 /* Style for each flex item */
 .flex-item {
   display: flex;
-  align-items: center;
+ align-items: center; /* Center vertically */
   width: 100%; /* Adjust width as needed */
   margin-bottom: 2%; /* Adjust spacing between rows */
 }
