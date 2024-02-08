@@ -157,12 +157,29 @@ font-family: 'Nunito', sans-serif;
 /* --------------------------------work------------------------------------------------*/
 
 
-.bitter-w{
+.nunito-w {
+font-family: 'Nunito', sans-serif;
+  font-size: 3vw;
+  z-index: 2;
+   color: #586BA4;
+}
+
+
+.bitter-w {
   font-family: 'Bitter', serif;
+   z-index: 2;
+   color: #586BA4;
   }
 
+.fade-in-w{
+    animation: fadeIn;
+    animation-duration: 1s; /* Animation duration */
+  animation-timing-function: ease; /* Timing function */
+  animation-iteration-count: forwards; /* Apply the fade-in animation */ 
+}
+
 /* Style the dropdown button */
-.dropbtn {
+.dropbtn-w {
   background-color: #3498db;
   color: white;
   padding: 12px;
@@ -172,7 +189,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Style the dropdown content (hidden by default) */
-.dropdown-content {
+.dropdown-content-w {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -182,7 +199,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Style the links inside the dropdown */
-.dropdown-content a {
+.dropdown-content-w a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -190,12 +207,12 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content-w a:hover {
   background-color: #f1f1f1;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown-w:hover .dropdown-content-w {
   display: block;
 }
 
@@ -207,13 +224,13 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Style for the flex container */
-.flex-container {
+.flex-container-w {
   display: flex;
   flex-wrap: wrap;
 }
 
 /* Style for each flex item */
-.flex-item {
+.flex-item-w {
   display: flex;
  align-items: center; /* Center vertically */
   width: 100%; /* Adjust width as needed */
@@ -221,21 +238,17 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Style for text on the left */
-.flex-item p {
+.flex-item-w p {
   margin-right: 2%; /* Adjust spacing between text and image */
   width: 40%; /* Adjust width of text */
 }
 
 /* Style for image on the right */
-.flex-item img {
+.flex-item-w img {
   max-width: 100%; /* Ensure image doesn't exceed container width */
   width: 50%; /* Adjust width of image */
 }
 
-.fade-in{
-  
-  
-}
 
 
 
