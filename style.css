@@ -180,8 +180,8 @@ font-family: 'Nunito', sans-serif;
 
 /* Style the dropdown button */
 .dropbtn-w {
-  background-color: #3498db;
-  color: white;
+  background-color: transparent;
+  color: #586BA4;
   padding: 12px;
   font-size: 16px;
   border: none;
@@ -248,7 +248,6 @@ font-family: 'Nunito', sans-serif;
   max-width: 100%; /* Ensure image doesn't exceed container width */
   width: 50%; /* Adjust width of image */
 }
-
 
 
 
