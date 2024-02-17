@@ -265,7 +265,7 @@ font-family: 'Nunito', sans-serif;
 
 /* Style for text on the left */
 .flex-item-w p {
-  margin-right: 2%; /* Adjust spacing between text and image */
+  margin-right: 3%; /* Adjust spacing between text and image */
   width: 40%; /* Adjust width of text */
 }
 
@@ -277,8 +277,8 @@ font-family: 'Nunito', sans-serif;
 
 #upRightText {
   position: fixed; /* Position the text relative to the viewport */
-  top: 50%; /* Align the top of the text to the vertical center of the viewport */
-  right: 3%; /* Align the left of the text to the horizontal center of the viewport */
+  top: 3%; /* Align the top of the text to the vertical center of the viewport */
+  right: 2%; /* Align the left of the text to the horizontal center of the viewport */
    /* Move the text back by half of its own width and height */
   text-align: center; /* Center the text horizontally */
 }
