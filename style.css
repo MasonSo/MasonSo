@@ -205,7 +205,7 @@ font-family: 'Nunito', sans-serif;
  */
 
 /* Style the dropdown content (hidden by default) */
-.dropdown-content-w {
+.dropbtn-w span:hover + .dropdown-content-w {
   
   display: none;
   position: absolute;
@@ -250,6 +250,7 @@ font-family: 'Nunito', sans-serif;
 .flex-container-w {
   display: flex;
   flex-wrap: wrap;
+ 
 }
 
 /* Style for each flex item */
