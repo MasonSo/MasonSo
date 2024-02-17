@@ -264,9 +264,17 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Style for text on the left */
+.flex-item-w h1 {
+  margin-right: 3%; /* Adjust spacing between text and image */
+  width: 40%; /* Adjust width of text */
+  font-family: 'Bungee', serif;
+  font-size: 2vw;
+}
 .flex-item-w p {
   margin-right: 3%; /* Adjust spacing between text and image */
   width: 40%; /* Adjust width of text */
+  font-family: 'Bitter', serif;
+  font-size: 1.5vw;
 }
 
 /* Style for image on the right */
