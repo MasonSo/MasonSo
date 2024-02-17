@@ -21,69 +21,70 @@
 <body>
 
   <div class="fade-in-w">
-<div class="dropdown-w">
-  <button class="dropbtn-w"> medium  </button>
-  <div class="dropdown-content-w">
-    <a href="#" onclick="showContainer(1)">video</a>
-    <a href="#" onclick="showContainer(2)">3D</a>
-    <a href="#" onclick="showContainer(3)">coding</a>
-  </div>
-</div>
+    <div class="dropdown-w">
+      <button class="dropbtn-w" onclick="toggleDropdown()">medium</button>
+      <div class="dropdown-content-w" id="dropdownContent">
+        <a href="#" onclick="showContainer(1)">video</a>
+        <a href="#" onclick="showContainer(2)">3D</a>
+        <a href="#" onclick="showContainer(3)">coding</a>
+      </div>
+    </div>
   </div>
     
-<div class="container-w" id="container1">
-  <div class="flex-container-w">
-    <div class="flex-item-w">
-      <p>Text on the left</p>
-      <img src="image.jpg" alt="Image on the right">
-    </div>
-    <div class="flex-item-w">
-      <p>Another text on the left</p>
-      <img src="image2.jpg" alt="Another image on the right">
-    </div>
-  </div>
-</div>
-
-<div class="container-w" id="container2">
-  <div class="flex-container-w">
-    <div class="flex-item-w">
-      <p>Text on the left</p>
-      <img src="image.jpg" alt="Image on the right">
-    </div>
-    <div class="flex-item-w">
-      <p>Another text on the left</p>
-      <img src="image2.jpg" alt="Another image on the right">
-    </div>
-  </div>
-</div>
-
-<div class="container-w" id="container3">
+  <div class="container-w" id="container1">
     <div class="flex-container-w">
-    <div class="flex-item-w">
-      <p>poop</p>
-      <img src="image.jpg" alt="Image on the right">
-    </div>
-    <div class="flex-item-w">
-      <p>Another text on the left</p>
-      <img src="image2.jpg" alt="Another image on the right">
+      <div class="flex-item-w">
+        <p>Text on the left</p>
+        <img src="image.jpg" alt="Image on the right">
+      </div>
+      <div class="flex-item-w">
+        <p>Another text on the left</p>
+        <img src="image2.jpg" alt="Another image on the right">
+      </div>
     </div>
   </div>
-</div>
-  
-  
-<script>
-  function showContainer(containerIndex) {
-    // Hide all flex containers
-    var containers = document.querySelectorAll('.container-w');
-    containers.forEach(function(container) {
-      container.style.display = 'none';
-    });
 
-    // Show the selected flex container
-    var selectedContainer = document.getElementById('container' + containerIndex);
-    selectedContainer.style.display = 'flex';
-  }
-</script>
+  <div class="container-w" id="container2">
+    <div class="flex-container-w">
+      <div class="flex-item-w">
+        <p>Text on the left</p>
+        <img src="image.jpg" alt="Image on the right">
+      </div>
+      <div class="flex-item-w">
+        <p>Another text on the left</p>
+        <img src="image2.jpg" alt="Another image on the right">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-w" id="container3">
+    <div class="flex-container-w">
+      <div class="flex-item-w">
+        <p>poop</p>
+        <img src="image.jpg" alt="Image on the right">
+      </div>
+      <div class="flex-item-w">
+        <p>Another text on the left</p>
+        <img src="image2.jpg" alt="Another image on the right">
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function showContainer(containerIndex) {
+      var containers = document.querySelectorAll('.container-w');
+      containers.forEach(function(container) {
+        container.style.display = 'none';
+      });
+      var selectedContainer = document.getElementById('container' + containerIndex);
+      selectedContainer.style.display = 'flex';
+    }
+
+    function toggleDropdown() {
+      var dropdownContent = document.getElementById("dropdownContent");
+      dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
 </body>
 </html>

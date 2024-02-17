@@ -188,7 +188,7 @@ font-family: 'Nunito', sans-serif;
   background-color: transparent;
   color: #B46005;
   padding: 1vw;
-  font-size: 2.5vw;
+  font-size: 2.8vw;
   border: none;
 }
 
@@ -199,13 +199,13 @@ font-family: 'Nunito', sans-serif;
    color: #586BA4;
 }
 
-/* .dropbtn-w:hover::after {
+.dropbtn-w:hover::after {
    content: "!";
 }
- */
+
 
 /* Style the dropdown content (hidden by default) */
-.dropbtn-w span:hover + .dropdown-content-w {
+.dropdown-content-w {
   
   display: none;
   position: absolute;
@@ -215,6 +215,7 @@ font-family: 'Nunito', sans-serif;
   z-index: 1;
   padding: 1vw;
 }
+
 
 /* Style the links inside the dropdown */
 .dropdown-content-w a {
@@ -235,9 +236,10 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown-w:hover .dropdown-content-w {
+/* .dropdown-w button:hover +  .dropdown-content-w {
   display: block;
 }
+ */
 
 /* Style for the container */
 .container-w {
