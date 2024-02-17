@@ -163,7 +163,7 @@ font-family: 'Nunito', sans-serif;
 
 
 .bitter-w {
-  font-family: 'Bitter', serif;
+  font-family: 'Bungee', serif;
    z-index: 2;
    color: #586BA4;
   }
@@ -179,16 +179,16 @@ font-family: 'Nunito', sans-serif;
 .dropbtn-w {
   background-color: transparent;
   color: #586BA4;
-  padding: 12px;
-  border: 1px solid #000000;
+  padding: 1vw;
+  border: none;
   cursor: pointer;
 }
 
 .dropbtn-w:hover{
   background-color: transparent;
   color: #B46005;
-  padding: 12px;
-  font-size: 2.8vw;
+  padding: 1vw;
+  font-size: 2.5vw;
   border: none;
 }
 
@@ -199,10 +199,10 @@ font-family: 'Nunito', sans-serif;
    color: #586BA4;
 }
 
-.dropbtn-w:hover::after {
+/* .dropbtn-w:hover::after {
    content: "!";
 }
-
+ */
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content-w {
@@ -211,22 +211,27 @@ font-family: 'Nunito', sans-serif;
   position: absolute;
   background-color: #EDE7DC;
   min-width: 1vw;
-  box-shadow: 8px 8px 8px 8px rgba(213,198,175,.2);
+   border: none;
   z-index: 1;
+  padding: 1vw;
 }
 
 /* Style the links inside the dropdown */
 .dropdown-content-w a {
-   font-family: 'Nunito', serif;
+   font-family: 'Bitter', serif;
   font-size: 2vw;
   color: #586BA4;
-  padding: 10px 15px;
+  padding: .3vw .5vw;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content-w a:hover {
     color: #B46005;
+}
+
+.dropdown-content-w a:hover::after {
+   content: "!";
 }
 
 /* Show the dropdown menu on hover */
