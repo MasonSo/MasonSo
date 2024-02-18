@@ -253,19 +253,19 @@ font-family: 'Nunito', sans-serif;
   display: flex;
   width: 75%;
   flex-wrap: wrap;
-/*   flex-direction: column; */
+  flex-direction: column;
 }
 
 /* Style for each flex item */
 .flex-item-w {
 /*   display: flex; */
  align-items: center; /* Center vertically */
-  width: 100%; /* Adjust width as needed */
+  width: 30%; /* Adjust width as needed */
   margin-bottom: 2%; /* Adjust spacing between rows */
 }
 
 .video {
-  display: flex;
+  width: 50%;
 }
 
 /* Style for text on the left */
