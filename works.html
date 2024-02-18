@@ -57,7 +57,7 @@
     function showContainer(containerIndex) {
       var containers = document.querySelectorAll('.container-w');
       containers.forEach(function(container) {
-        container.style.display = 'none';
+        container.style.display = 'flex';
       });
       var selectedContainer = document.getElementById('container' + containerIndex);
       selectedContainer.style.display = 'flex';

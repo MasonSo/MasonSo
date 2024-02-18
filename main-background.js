@@ -24,10 +24,6 @@ function toggleText() {
  setTimeout(function() {
         textContainer2.classList.toggle("visible2");
     }, 1000);
-   var textContainer3 = document.getElementById("textContainer3");
- setTimeout(function() {
-        textContainer3.classList.toggle("visible3");
-    }, 1000);
 }
 
 
@@ -37,7 +33,7 @@ function setup() {
 }
 
 function draw() {
-  background(237,231,220);
+  background(237, 231, 230);
   textAlign(CENTER);
   textSize(36);
   noCursor();
@@ -59,20 +55,20 @@ function draw() {
   fill(r1, g1, b1);
   circle(mouseX, mouseY, windowWidth / 96);
 
-    mouseXDelay += (mouseX - mouseXDelay) * 0.3;
-  mouseYDelay += (mouseY - mouseYDelay) * 0.3;
+    mouseXDelay += 2*(mouseX - mouseXDelay) * 0.15;
+  mouseYDelay += 2*(mouseY - mouseYDelay) * 0.15;
   stroke(r1, g1, b1);
   noFill();
   circle(mouseXDelay, mouseYDelay, windowWidth / 60);
   
-    mouseXDelay2 += (mouseX - mouseXDelay2) * 0.15;
-  mouseYDelay2 += (mouseY - mouseYDelay2) * 0.15;
+    mouseXDelay2 += 2*(mouseX - mouseXDelay2) * 0.08;
+  mouseYDelay2 += 2*(mouseY - mouseYDelay2) * 0.08;
   stroke(r1, g1, b1);
   noFill();
   circle(mouseXDelay2, mouseYDelay2, windowWidth / 45);
   
-      mouseXDelay3 += (mouseX - mouseXDelay3) * 0.08;
-  mouseYDelay3 += (mouseY - mouseYDelay3) * 0.08;
+      mouseXDelay3 += 2*(mouseX - mouseXDelay3) * 0.04;
+  mouseYDelay3 += 2*(mouseY - mouseYDelay3) * 0.04;
   stroke(r1, g1, b1);
   noFill();
   circle(mouseXDelay3, mouseYDelay3, windowWidth / 35);
@@ -91,7 +87,7 @@ function draw() {
     b1 = 5;
     r2 = 237;
     g2 = 231;
-    b2 = 220;
+    b2 = 230;
   }
 }
 
