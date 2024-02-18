@@ -269,12 +269,14 @@ font-family: 'Nunito', sans-serif;
   width: 40%; /* Adjust width of text */
   font-family: 'Bungee', serif;
   font-size: 2vw;
+   color: #586BA4;
 }
 .flex-item-w p {
   margin-right: 3%; /* Adjust spacing between text and image */
   width: 40%; /* Adjust width of text */
   font-family: 'Bitter', serif;
   font-size: 1vw;
+   color: #586BA4;
 }
 
 /* Style for image on the right */
