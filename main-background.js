@@ -1,18 +1,3 @@
-let font;
-let showText = 0;
-let r1 = 180;
-let g1 = 96;
-let b1 = 5;
-let r2 = 237;
-let g2 = 231;
-let b2 = 230;
-let mouseXDelay = 0;
-let mouseYDelay = 0;
-let mouseXDelay2 = 0;
-let mouseYDelay2 = 0;
-let mouseXDelay3 = 0;
-let mouseYDelay3 = 0;
-
 function toggleText() {
   var textContainer = document.getElementById("textContainer");
   textContainer.classList.toggle("visible");
@@ -30,6 +15,20 @@ function toggleText() {
     }, 1000);
 }
 
+let font;
+let showText = 0;
+let r1 = 180;
+let g1 = 96;
+let b1 = 5;
+let r2 = 237;
+let g2 = 231;
+let b2 = 230;
+let mouseXDelay = 0;
+let mouseYDelay = 0;
+let mouseXDelay2 = 0;
+let mouseYDelay2 = 0;
+let mouseXDelay3 = 0;
+let mouseYDelay3 = 0;
 
 
 function setup() {
