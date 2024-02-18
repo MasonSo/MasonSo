@@ -242,13 +242,18 @@ font-family: 'Nunito', sans-serif;
  */
 
 /* Style for the container */
-.container-first-w {
+.container-w {
   display: flex;
   margin-left: 10%;
   margin-top: 10vw;
   justify-content: center;/* Center horizontally */
   width: 80%;
   height: 30vh; /* Full viewport height */
+}
+
+.container-w video {
+  width: 53.31vw;
+  height: 30vh;
 }
 
 /* Style for the flex container */
