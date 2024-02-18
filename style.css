@@ -279,6 +279,10 @@ font-family: 'Nunito', sans-serif;
    color: #586BA4;
 }
 
+.flex-item-w video {
+ border-color: #586BA4;
+}
+
 /* Style for image on the right */
 .flex-item-w img {
   max-width: 100%; /* Ensure image doesn't exceed container width */
