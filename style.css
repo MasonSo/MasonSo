@@ -251,8 +251,9 @@ font-family: 'Nunito', sans-serif;
 /* Style for the flex container */
 .flex-container-w {
   display: flex;
+  width: 75%;
   flex-wrap: wrap;
-  flex-direction: column;
+/*   flex-direction: column; */
 }
 
 /* Style for each flex item */
@@ -261,6 +262,10 @@ font-family: 'Nunito', sans-serif;
  align-items: center; /* Center vertically */
   width: 100%; /* Adjust width as needed */
   margin-bottom: 2%; /* Adjust spacing between rows */
+}
+
+.video {
+  display: flex;
 }
 
 /* Style for text on the left */
