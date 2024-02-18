@@ -162,155 +162,87 @@ font-family: 'Nunito', sans-serif;
 /* --------------------------------work------------------------------------------------*/
 
 
-.bitter-w {
-  font-family: 'Bungee', serif;
-   z-index: 2;
-   color: #586BA4;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    /* Additional styles for hiding/showing flex containers */
+    .container-w {
+      display: none; /* Initially hide flex containers */
+    }
+    
+    /* Style for the selected dropdown option */
+    .dropdown-content-w .selected {
+      background-color: yellow; /* Change this to the desired color */
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Bungee&family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="fade-in-w">
+    <div class="dropdown-w">
+      <button class="dropbtn-w" onclick="toggleDropdown()">medium</button>
+      <div class="dropdown-content-w" id="dropdownContent">
+        <a href="#" onclick="showContainer(1)">video</a>
+        <a href="#" onclick="showContainer(2)">3D</a>
+        <a href="#" onclick="showContainer(3)">coding</a>
+      </div>
+    </div>
+  </div>
+    
+  <div class="container-w" id="container1">
+    <div class="flex-container-w">
+      <div class="flex-item-w">
+        <h1>Anxious</h1>
+        <p>1 minute experimental film with no audio, filmed in a theater, shot on XA50, filmed by me and Somi</p>
+      </div>
+    </div>
+    <video controls>
+      <source src="https://cdn.glitch.me/57ee10e3-8591-4a76-9615-b954245b6841/Anxious_Project_1.mp4?v=1708235615667" type="video/mp4">
+    </video>
+  </div>
 
-.fade-in-w{
-    animation: fadeIn;
-    animation-duration: 1s; /* Animation duration */
-  animation-timing-function: ease; /* Timing function */
-  animation-iteration-count: forwards; /* Apply the fade-in animation */ 
-}
-
-/* Style the dropdown button */
-.dropbtn-w {
-  background-color: transparent;
-  color: #586BA4;
-  padding: 1vw;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn-w:hover{
-  background-color: transparent;
-  color: #B46005;
-  padding: 1vw;
-  font-size: 2.8vw;
-  border: none;
-}
-
-.dropdown-w button{
- font-family: 'Nunito', sans-serif;
-  font-size: 2.5vw;
-  z-index: 2;
-   color: #586BA4;
-}
-
-.dropbtn-w:hover::after {
-   content: "!";
-}
-
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content-w {
+  <div class="fade-in-w">
+    <div class="nunito-text">
+      <div id="upRightText"><button class="nunito-text-button" onclick="window.location.href = 'index.html';">back</button></div>
+    </div>
+  </div>
   
-  display: none;
-  position: absolute;
-  background-color: #EDE7DC;
-  min-width: 1vw;
-   border: none;
-  z-index: 1;
-  padding: 1vw;
-}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Call showContainer(1) to display the container at index 1 initially
+      showContainer(1);
+    });
 
+    function showContainer(containerIndex) {
+      var containers = document.querySelectorAll('.container-w');
+      containers.forEach(function(container) {
+        container.style.display = 'none';
+      });
+      var selectedContainer = document.getElementById('container' + containerIndex);
+      selectedContainer.style.display = 'flex';
 
-/* Style the links inside the dropdown */
-.dropdown-content-w a {
-   font-family: 'Bitter', serif;
-  font-size: 2vw;
-  color: #586BA4;
-  padding: .3vw .5vw;
-  display: block;
-}
+      // Highlight the selected dropdown option
+      var dropdownOptions = document.querySelectorAll('.dropdown-content-w a');
+      dropdownOptions.forEach(function(option) {
+        option.classList.remove('selected');
+      });
+      dropdownOptions[containerIndex - 1].classList.add('selected');
+    }
 
-/* Change color of dropdown links on hover */
-.dropdown-content-w a:hover {
-    color: #B46005;
-}
-
-.dropdown-content-w a:hover::after {
-   content: "!";
-}
-
-/* Show the dropdown menu on hover */
-/* .dropdown-w button:hover +  .dropdown-content-w {
-  display: block;
-}
- */
-
-/* Style for the container */
-.container-w {
-  display: flex;
-  margin-left: 10%;
-  margin-top: 10vw;
-  justify-content: center;/* Center horizontally */
-  width: 80%;
-  height: 30vh; /* Full viewport height */
-}
-
-.container-w video {
-  width: 53.31vw;
-  height: 30vh;
-}
-
-/* Style for the flex container */
-.flex-container-w {
-  margin-left: 10%;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-/* Style for each flex item */
-.flex-item-w {
-/*   display: flex; */
- align-items: center; /* Center vertically */
-  width: 30%; /* Adjust width as needed */
-  margin-bottom: 2%; /* Adjust spacing between rows */
-}
-
-.video {
-  width: 50%;
-  height: 100%;
-}
-
-/* Style for text on the left */
-.flex-item-w h1 {
-  margin-right: 3%; /* Adjust spacing between text and image */
-  width: 40%; /* Adjust width of text */
-  font-family: 'Bungee', serif;
-  font-size: 2vw;
-   color: #586BA4;
-}
-.flex-item-w p {
-  margin-right: 3%; /* Adjust spacing between text and image */
-  width: 300%; /* Adjust width of text */
-  font-family: 'Bitter', serif;
-  font-size: 1vw;
-   color: #586BA4;
-}
-
-
-/* Style for image on the right */
-.flex-item-w img {
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-  width: 50%; /* Adjust width of image */
-}
-
-#upRightText {
-  position: fixed; /* Position the text relative to the viewport */
-  top: 3%; /* Align the top of the text to the vertical center of the viewport */
-  right: 2%; /* Align the left of the text to the horizontal center of the viewport */
-   /* Move the text back by half of its own width and height */
-  text-align: center; /* Center the text horizontally */
-}
-
-
-
+    function toggleDropdown() {
+      var dropdownContent = document.getElementById("dropdownContent");
+      dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
 
 /* --------------------------keyframes------------------------------------*/
 

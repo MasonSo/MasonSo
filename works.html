@@ -55,23 +55,35 @@
   
   <script>
     
-     document.addEventListener('DOMContentLoaded', function() {
-    // Call showContainer(1) to display the container at index 1 initially
-    showContainer(1);
-  });
-    function showContainer(containerIndex) {
-      var containers = document.querySelectorAll('.container-w');
-      containers.forEach(function(container) {
-        container.style.display = 'none';
-      });
-      var selectedContainer = document.getElementById('container' + containerIndex);
-      selectedContainer.style.display = 'flex';
-    }
+ document.addEventListener('DOMContentLoaded', function() {
+  // Call showContainer(1) to display the container at index 1 initially
+  showContainer(1);
+});
 
-    function toggleDropdown() {
-      var dropdownContent = document.getElementById("dropdownContent");
-      dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-    }
+function showContainer(containerIndex) {
+  var containers = document.querySelectorAll('.container-w');
+  containers.forEach(function(container) {
+    container.style.display = 'none';
+  });
+  var selectedContainer = document.getElementById('container' + containerIndex);
+  selectedContainer.style.display = 'flex';
+}
+
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+}
+
+function changeDropdownColor(select) {
+  // Remove the selected class from all options
+  var options = select.getElementsByTagName("option");
+  for (var i = 0; i < options.length; i++) {
+    options[i].classList.remove("selected");
+  }
+  // Add the selected class to the currently selected option
+  var selectedOption = options[select.selectedIndex];
+  selectedOption.classList.add("selected");
+}
   </script>
 
 </body>
