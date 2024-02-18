@@ -252,11 +252,12 @@ font-family: 'Nunito', sans-serif;
 .flex-container-w {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* Style for each flex item */
 .flex-item-w {
-  display: flex;
+/*   display: flex; */
  align-items: center; /* Center vertically */
   width: 100%; /* Adjust width as needed */
   margin-bottom: 2%; /* Adjust spacing between rows */
