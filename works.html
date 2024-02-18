@@ -54,10 +54,15 @@
   </div>
   
   <script>
+    
+     document.addEventListener('DOMContentLoaded', function() {
+    // Call showContainer(1) to display the container at index 1 initially
+    showContainer(1);
+  });
     function showContainer(containerIndex) {
       var containers = document.querySelectorAll('.container-w');
       containers.forEach(function(container) {
-        container.style.display = 'flex';
+        container.style.display = 'none';
       });
       var selectedContainer = document.getElementById('container' + containerIndex);
       selectedContainer.style.display = 'flex';
