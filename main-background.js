@@ -24,6 +24,10 @@ function toggleText() {
  setTimeout(function() {
         textContainer2.classList.toggle("visible2");
     }, 1000);
+  var textContainer3 = document.getElementById("textContainer3");
+ setTimeout(function() {
+        textContainer3.classList.toggle("visible3");
+    }, 1000);
 }
 
 
@@ -33,7 +37,7 @@ function setup() {
 }
 
 function draw() {
-  background(237, 231, 230);
+  background(237,231,220);
   textAlign(CENTER);
   textSize(36);
   noCursor();
