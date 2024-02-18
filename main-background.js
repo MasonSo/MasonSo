@@ -15,7 +15,7 @@ function toggleText() {
     }, 1000);
 }
 
-let font;
+let letFont;
 let showText = 0;
 let r1 = 180;
 let g1 = 96;
@@ -29,68 +29,73 @@ let mouseXDelay2 = 0;
 let mouseYDelay2 = 0;
 let mouseXDelay3 = 0;
 let mouseYDelay3 = 0;
-
+let blinkTimer = 0; // Timer for blinking
+let blinkInterval = 30; // Interval for blinking
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background(237,231,220);
+  background(237, 231, 220);
   textAlign(CENTER);
   textSize(36);
   noCursor();
   noStroke();
 
-  // Draw first circle
+  // first circle
   if (showText == 0) {
-    fill(180, 96, 5);
+    fill(88,107,164);
     circle(windowWidth / 2, windowHeight / 2, windowWidth / 12);
   }
 
-  // Draw second circle
+  // second circle
   if (showText == 0) {
-    fill(r2, g2, b2);
+    if (blinkTimer < blinkInterval / 2) {
+      fill(88,107,164);
+    } else {
+      fill(r2, g2, b2); 
+    }
     circle(windowWidth / 2, windowHeight / 2, windowWidth / 12.8);
   }
 
-  // Draw third circle following the mouse
+  // circles following the mouse
   fill(r1, g1, b1);
   circle(mouseX, mouseY, windowWidth / 96);
 
-    mouseXDelay += 2*(mouseX - mouseXDelay) * 0.15;
-  mouseYDelay += 2*(mouseY - mouseYDelay) * 0.15;
+  mouseXDelay += 2 * (mouseX - mouseXDelay) * 0.15;
+  mouseYDelay += 2 * (mouseY - mouseYDelay) * 0.15;
   stroke(r1, g1, b1);
   noFill();
   circle(mouseXDelay, mouseYDelay, windowWidth / 60);
-  
-    mouseXDelay2 += 2*(mouseX - mouseXDelay2) * 0.08;
-  mouseYDelay2 += 2*(mouseY - mouseYDelay2) * 0.08;
+
+  mouseXDelay2 += 2 * (mouseX - mouseXDelay2) * 0.08;
+  mouseYDelay2 += 2 * (mouseY - mouseYDelay2) * 0.08;
   stroke(r1, g1, b1);
   noFill();
   circle(mouseXDelay2, mouseYDelay2, windowWidth / 45);
-  
-      mouseXDelay3 += 2*(mouseX - mouseXDelay3) * 0.04;
-  mouseYDelay3 += 2*(mouseY - mouseYDelay3) * 0.04;
+
+  mouseXDelay3 += 2 * (mouseX - mouseXDelay3) * 0.04;
+  mouseYDelay3 += 2 * (mouseY - mouseYDelay3) * 0.04;
   stroke(r1, g1, b1);
   noFill();
   circle(mouseXDelay3, mouseYDelay3, windowWidth / 35);
-  
+
   let d = dist(mouseX, mouseY, windowWidth / 2, windowHeight / 2);
   if (d < windowWidth / 25.6) {
     r1 = 88;
     g1 = 107;
     b1 = 164;
-    r2 = 180;
-    g2 = 96;
-    b2 = 5;
   } else {
     r1 = 180;
     g1 = 96;
     b1 = 5;
-    r2 = 237;
-    g2 = 231;
-    b2 = 230;
+  }
+
+  // Increment the blink timer
+  blinkTimer += .4;
+  if (blinkTimer >= blinkInterval) {
+    blinkTimer = 0; // Reset timer
   }
 }
 
