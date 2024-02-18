@@ -251,10 +251,6 @@ font-family: 'Nunito', sans-serif;
    
 }
 
-.container-w video {
-  width: 53.31vw;
-  height: 30vh;
-}
 
 /* Style for the flex container */
 .flex-container-w {
@@ -263,7 +259,12 @@ font-family: 'Nunito', sans-serif;
   width: 100%;
   flex-wrap: wrap;
   height: 30vh;
-  flex-direction: row;
+flex-direction: row;
+}
+
+.flex-container-w video {
+  width: 53.31vw;
+  height: 10vh;
 }
 
 /* Style for each flex item */
@@ -275,10 +276,7 @@ font-family: 'Nunito', sans-serif;
   
 }
 
-.video {
-  width: 50%;
-  height: 100%;
-}
+
 
 /* Style for text on the left */
 .flex-item-w h1 {
@@ -290,7 +288,7 @@ font-family: 'Nunito', sans-serif;
 }
 .flex-item-w p {
   margin-right: 3%; /* Adjust spacing between text and image */
-  width: 300%; /* Adjust width of text */
+  width: 80%; /* Adjust width of text */
   font-family: 'Bitter', serif;
   font-size: 1vw;
    color: #586BA4;
