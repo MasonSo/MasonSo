@@ -249,6 +249,7 @@ font-family: 'Nunito', sans-serif;
   justify-content: center;/* Center horizontally */
   width: 80%;
   height: 100vh;
+  flex-direction: column;
    
 }
 
@@ -263,7 +264,6 @@ font-family: 'Nunito', sans-serif;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  flex-direction: column;
   height: 30vh;
 }
 
@@ -273,6 +273,7 @@ font-family: 'Nunito', sans-serif;
  align-items: center; /* Center vertically */
   width: 30%; /* Adjust width as needed */
   margin-bottom: 2%; /* Adjust spacing between rows */
+  
 }
 
 .video {
