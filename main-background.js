@@ -37,7 +37,7 @@ function setup() {
 }
 
 function draw() {
-  background(237, 231, 230);
+  background(237,231,220);
   textAlign(CENTER);
   textSize(36);
   noCursor();
@@ -91,7 +91,7 @@ function draw() {
     b1 = 5;
     r2 = 237;
     g2 = 231;
-    b2 = 230;
+    b2 = 220;
   }
 }
 
