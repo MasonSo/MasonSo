@@ -252,7 +252,6 @@ font-family: 'Nunito', sans-serif;
 .flex-container-w {
   display: flex;
   flex-wrap: wrap;
- 
 }
 
 /* Style for each flex item */
