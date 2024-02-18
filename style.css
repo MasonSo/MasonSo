@@ -259,14 +259,15 @@ font-family: 'Nunito', sans-serif;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 70vh; /* 
 flex-direction: row;
 }
 
 .flex-container-w video {
   max-width:50%;
   width: 100%;
-  height: 100%;
+  height: 80%;
+  
 }
 
 /* Style for each flex item */
@@ -274,22 +275,22 @@ flex-direction: row;
 /*   display: flex; */
  align-items: center; /* Center vertically */
   width: 30%; /* Adjust width as needed */
+  margin-right: 10%;
   
 }
 
 
 
 /* Style for text on the left */
-.flex-item-w h1 {
-  margin-right: 3%; /* Adjust spacing between text and image */
+.flex-item-w h1 { 
   width: 40%; /* Adjust width of text */
   font-family: 'Bungee', serif;
   font-size: 2vw;
    color: #586BA4;
 }
 .flex-item-w p {
-  margin-right: 3%; /* Adjust spacing between text and image */
-  width: 80%; /* Adjust width of text */
+ 
+  width: 100%; /* Adjust width of text */
   font-family: 'Bitter', serif;
   font-size: 1vw;
    color: #586BA4;
