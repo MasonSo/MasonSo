@@ -22,14 +22,14 @@
   <div class="dropdown-w">
     <button class="dropbtn-w" onclick="toggleDropdown()">medium</button>
     <div class="dropdown-content-w" id="dropdownContent">
-      <a href="#">video</a>
-      <a href="#">3D</a>
-      <a href="#">coding</a>
+      <a href="#" onclick="showContainer(1)">video</a>
+      <a href="#" onclick="showContainer(2)">3D</a>
+      <a href="#" onclick="showContainer(3)">coding</a>
     </div>
   </div>
 </div>
 
-<div class="main-container-w" id="container1">
+<div class="main-container-w container-w" id="container1">
   <div class="flex-container-short-w">
     <div class="flex-item-w">
       <h1>Anxious</h1>
@@ -41,7 +41,7 @@
   </div>
 </div>
 
-<div class="main-container-w" id="container2">
+<div class="main-container-w container-w" id="container2">
   <div class="flex-container-short-w">
     <div class="flex-item-w">
       <h1>POOOP</h1>
@@ -61,7 +61,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Call showContainer(1) to display the container at index 1 initially
+  // Show container1 initially
   showContainer(1);
 });
 
@@ -75,28 +75,12 @@ function showContainer(containerIndex) {
 }
 
 function toggleDropdown() {
-  var container1 = document.getElementById("container1");
-  var container2 = document.getElementById("container2");
   var dropdownContent = document.getElementById("dropdownContent");
-  
-  if (container1.style.display === "flex") {
-    container1.style.display = "none";
-    container2.style.display = "flex";
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
   } else {
-    container1.style.display = "flex";
-    container2.style.display = "none";
+    dropdownContent.style.display = "block";
   }
-}
-
-function changeDropdownColor(select) {
-  // Remove the selected class from all options
-  var options = select.getElementsByTagName("option");
-  for (var i = 0; i < options.length; i++) {
-    options[i].classList.remove("selected");
-  }
-  // Add the selected class to the currently selected option
-  var selectedOption = options[select.selectedIndex];
-  selectedOption.classList.add("selected");
 }
 </script>
 
