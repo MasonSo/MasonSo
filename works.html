@@ -11,68 +11,56 @@
     }
     
   </style>
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@300&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Bungee&family=Nunito:wght@300&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
 
-  <div class="fade-in-w">
-    <div class="dropdown-w">
-      <button class="dropbtn-w" onclick="toggleDropdown()">medium</button>
-      <div class="dropdown-content-w" id="dropdownContent">
-        <a href="#" onclick="showContainer(1)">video</a>
-        <a href="#" onclick="showContainer(2)">3D</a>
-        <a href="#" onclick="showContainer(3)">coding</a>
-      </div>
+<div class="fade-in-w">
+  <div class="dropdown-w">
+    <button class="dropbtn-w" onclick="toggleDropdown()">medium</button>
+    <div class="dropdown-content-w" id="dropdownContent">
+      <a href="#">video</a>
+      <a href="#">3D</a>
+      <a href="#">coding</a>
     </div>
   </div>
-    
-  
-  <div class="main-container-w" id="container1">
-    
-    <div class="flex-container-short-w">
-      <div class="flex-item-w">
-        <h1>Anxious</h1>
-        <p>Dear USC Student / Faculty member / Staff member: </p>
-        </div>
-      <video controls>
-  <source src="https://cdn.glitch.me/57ee10e3-8591-4a76-9615-b954245b6841/Anxious_Project_1.mp4?v=1708235615667" type="video/mp4">
-</video>
+</div>
+
+<div class="main-container-w" id="container1">
+  <div class="flex-container-short-w">
+    <div class="flex-item-w">
+      <h1>Anxious</h1>
+      <p>Dear USC Student / Faculty member / Staff member: </p>
     </div>
-
-    
+    <video controls>
+      <source src="https://cdn.glitch.me/57ee10e3-8591-4a76-9615-b954245b6841/Anxious_Project_1.mp4?v=1708235615667" type="video/mp4">
+    </video>
   </div>
-  
-    <div class="main-container-w" id="container2">
-    
-    <div class="flex-container-short-w">
-      <div class="flex-item-w">
-        <h1>POOOP</h1>
-        <p>Dear </p>
-        </div>
-      <video controls>
-  <source src="https://cdn.glitch.me/57ee10e3-8591-4a76-9615-b954245b6841/Anxious_Project_1.mp4?v=1708235615667" type="video/mp4">
-</video>
+</div>
+
+<div class="main-container-w" id="container2">
+  <div class="flex-container-short-w">
+    <div class="flex-item-w">
+      <h1>POOOP</h1>
+      <p>Dear </p>
     </div>
-
-    
+    <video controls>
+      <source src="https://cdn.glitch.me/57ee10e3-8591-4a76-9615-b954245b6841/Anxious_Project_1.mp4?v=1708235615667" type="video/mp4">
+    </video>
   </div>
-    
-  
+</div>
 
-  <div class="fade-in-w">
-        <div class="nunito-text">
-          <div id="upRightText"><button class="nunito-text-button" onclick="window.location.href = 'index.html';">back</button></div>
-      </div>
+<div class="fade-in-w">
+  <div class="nunito-text">
+    <div id="upRightText"><button class="nunito-text-button" onclick="window.location.href = 'index.html';">back</button></div>
   </div>
-  
-  <script>
-    
- document.addEventListener('DOMContentLoaded', function() {
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
   // Call showContainer(1) to display the container at index 1 initially
   showContainer(1);
 });
@@ -87,8 +75,17 @@ function showContainer(containerIndex) {
 }
 
 function toggleDropdown() {
+  var container1 = document.getElementById("container1");
+  var container2 = document.getElementById("container2");
   var dropdownContent = document.getElementById("dropdownContent");
-  dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+  
+  if (container1.style.display === "flex") {
+    container1.style.display = "none";
+    container2.style.display = "flex";
+  } else {
+    container1.style.display = "flex";
+    container2.style.display = "none";
+  }
 }
 
 function changeDropdownColor(select) {
@@ -101,7 +98,7 @@ function changeDropdownColor(select) {
   var selectedOption = options[select.selectedIndex];
   selectedOption.classList.add("selected");
 }
-  </script>
+</script>
 
 </body>
 </html>
