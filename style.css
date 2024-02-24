@@ -333,9 +333,53 @@ flex-direction: row;
 /* --------------------------about------------------------------------*/
 
 
+.main-container-a {
+  display: flex;
+  margin-left: 10%;
+  width: 80%;
+  height: 100vh;
+    flex-direction: column;
+   
+}
 
 
+.flex-container-short-a {
+  margin-left: 10%;
+  margin-top: 20%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 30vh; /* change for smaller text sizes*/
+flex-direction: row;
+}
 
+.flex-container-short-a video {
+  max-width:50%;
+  width: 100%;
+  height: 20vw; /* location of video */
+}
+
+/* Style for text on the left */
+.flex-item-a h1 { 
+  width: 40%; /* Adjust width of text */
+  font-family: 'Bungee', serif;
+  font-size: 2vw;
+   color: #586BA4;
+}
+.flex-item-a p {
+ 
+  width: 100%; /* Adjust width of text */
+  font-family: 'Bitter', serif;
+  font-size: 1vw;
+   color: #586BA4;
+}
+
+
+/* Style for image on the right */
+.flex-item-a img {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  width: 50%; /* Adjust width of image */
+}
 
 
 
