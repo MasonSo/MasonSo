@@ -361,7 +361,7 @@ flex-direction: row;
 
 /* Style for text on the left */
 .flex-item-a h1 { 
-  width: 40%; /* Adjust width of text */
+  width: 70%; /* Adjust width of text */
   font-family: 'Bungee', serif;
   font-size: 2vw;
    color: #586BA4;
