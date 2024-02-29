@@ -13,9 +13,10 @@ body {
 }
 
 
+
 .nunito-title h1 {
 font-family: 'Nunito', sans-serif;
-  font-size: 5vw;
+  font-size: 8vw;
   z-index: 2;
    color: #586BA4;
 }
