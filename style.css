@@ -2,7 +2,10 @@
 
 /* --------------------------home-page start-------------------------------------*/
 
-body { /* Replace #ffffff with your desired color code */
+body {
+  color: #EDE7DC;
+  z-index: -2;
+  /* Replace #ffffff with your desired color code */
 }
 
 .bungee {
@@ -200,13 +203,14 @@ font-family: 'Nunito', sans-serif;
 .dropdown-content-w {
   
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #D5C6AF;
   min-width: 1vw;
+  left: 2.5vw;
+   top: 8vw;
    border: none;
   z-index: 1;
   padding: 1vw;
-  margin-left: 2.5vw;
 }
 
 
