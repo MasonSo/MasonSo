@@ -64,7 +64,7 @@ font-family: 'Nunito', sans-serif;
   border-radius: 50%; /* Make it circular */
   background-color: transparent; /* Button background color */
   color: #ffffff; /* Text color */
-  font-size: 16px; /* Text size */
+  font-size: 16vw; /* Text size */
   border: none; /* Remove border */
    cursor: none;
 }
@@ -102,6 +102,15 @@ font-family: 'Nunito', sans-serif;
   text-align: center; /* Center the text horizontally */
   transform: translate(-50%, -50%);
 }
+
+#bottomText p{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 
 .hidden, .hidden1, .hidden2, .hidden3 {
   display: none; /* Hide the text initially */
