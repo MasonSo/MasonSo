@@ -99,7 +99,7 @@ font-family: 'Nunito', sans-serif;
 
 #leftText {
   position: fixed; /* Position the text relative to the viewport */
-  top: 50%; /* Align the top of the text to the vertical center of the viewport */
+  top: 3%; /* Align the top of the text to the vertical center of the viewport */
   left: 3%; /* Align the left of the text to the horizontal center of the viewport */
    /* Move the text back by half of its own width and height */
   text-align: center; /* Center the text horizontally */
@@ -107,7 +107,7 @@ font-family: 'Nunito', sans-serif;
 
 #rightText {
   position: fixed; /* Position the text relative to the viewport */
-  top: 50%; /* Align the top of the text to the vertical center of the viewport */
+  top: 3%; /* Align the top of the text to the vertical center of the viewport */
   right: 3%; /* Align the left of the text to the horizontal center of the viewport */
    /* Move the text back by half of its own width and height */
   text-align: center; /* Center the text horizontally */
