@@ -31,6 +31,9 @@ let mouseXDelay3 = 0;
 let mouseYDelay3 = 0;
 let blinkTimer = 0; // Timer for blinking
 let blinkInterval = 30; // Interval for blinking
+let myFrameCount = 0;
+let opacity = 0;
+let fadeInSpeed = 4;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -42,7 +45,16 @@ function draw() {
   textSize(36);
   noCursor();
   noStroke();
-
+  
+   if (showText == 1) {
+      if (myFrameCount > 120){
+         if (opacity < 255) {
+    opacity += fadeInSpeed;
+  }
+    drawRectangle();
+      }
+  }
+  
   // first circle
   if (showText == 0) {
     fill(88,107,164);
@@ -97,12 +109,20 @@ function draw() {
   if (blinkTimer >= blinkInterval) {
     blinkTimer = 0; // Reset timer
   }
+  myFrameCount++;
 }
 
 function mousePressed() {
   // Check if the mouse is over the second circle
   let d = dist(mouseX, mouseY, windowWidth / 2, windowHeight / 2);
   if (d < windowWidth / 25.6) {
-    showText = 1; // Toggle the boolean value
+    showText = 1; // Toggle the boolean value // Call drawRectangle() after 2 seconds
+    myFrameCount = 0;
   }
+}
+
+function drawRectangle() {
+  fill(213,198,175,opacity);
+  noStroke();
+  rect(0, 0, width, height / 9);
 }
