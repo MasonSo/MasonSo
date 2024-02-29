@@ -169,7 +169,7 @@ font-family: 'Nunito', sans-serif;
 .dropbtn-w {
   background-color: transparent;
   color: #586BA4;
-  padding: 1vw;
+  padding: none;
   border: none;
   cursor: pointer;
 }
@@ -177,7 +177,7 @@ font-family: 'Nunito', sans-serif;
 .dropbtn-w:hover{
   background-color: transparent;
   color: #B46005;
-  padding: 1vw;
+  padding: none;
   font-size: 2.8vw;
   border: none;
 }
@@ -187,10 +187,12 @@ font-family: 'Nunito', sans-serif;
   font-size: 2.5vw;
   z-index: 2;
    color: #586BA4;
+  cursor: none;
 }
 
 .dropbtn-w:hover::after {
    content: "!";
+  cursor: none;
 }
 
 
@@ -199,7 +201,7 @@ font-family: 'Nunito', sans-serif;
   
   display: none;
   position: absolute;
-  background-color: #EDE7DC;
+  background-color: #D5C6AF;
   min-width: 1vw;
    border: none;
   z-index: 1;
@@ -235,6 +237,7 @@ font-family: 'Nunito', sans-serif;
 .main-container-w {
   display: flex;
   margin-left: 10%;
+  margin-top: 10%;
   width: 80%;
   height: 100vh;
     flex-direction: column;
