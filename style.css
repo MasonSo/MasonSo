@@ -267,6 +267,11 @@ flex-direction: row;
   height: 40vw; /* location of video */
 }
 
+.flex-container-long-w img {
+  max-width:100%;
+  height: 40vw; /* location of video */
+}
+
 .flex-container-short-w {
   margin-left: 10%;
   margin-bottom: 20%;
@@ -283,6 +288,10 @@ flex-direction: row;
   height: 20vw; /* location of video */
 }
 
+.flex-container-short-w img {
+  max-width:100%;
+  height: 30vw; /* location of video */
+}
 
 
 /* Style for each flex item */
