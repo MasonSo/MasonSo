@@ -42,19 +42,19 @@ function draw() {
 
   mouseXDelay += 2 * (mouseX - mouseXDelay) * 0.15;
   mouseYDelay += 2 * (mouseY - mouseYDelay) * 0.15;
-  stroke(r1, g1, b1);
+  stroke(r1, g1, b1,200);
   noFill();
   circle(mouseXDelay, mouseYDelay, windowWidth / 60);
 
   mouseXDelay2 += 2 * (mouseX - mouseXDelay2) * 0.08;
   mouseYDelay2 += 2 * (mouseY - mouseYDelay2) * 0.08;
-  stroke(r1, g1, b1);
+  stroke(r1, g1, b1,150);
   noFill();
   circle(mouseXDelay2, mouseYDelay2, windowWidth / 45);
 
   mouseXDelay3 += 2 * (mouseX - mouseXDelay3) * 0.04;
   mouseYDelay3 += 2 * (mouseY - mouseYDelay3) * 0.04;
-  stroke(r1, g1, b1);
+  stroke(r1, g1, b1,100);
   noFill();
   circle(mouseXDelay3, mouseYDelay3, windowWidth / 35);
 
