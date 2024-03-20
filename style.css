@@ -217,7 +217,7 @@ font-family: 'Nunito', sans-serif;
 /* Style the links inside the dropdown */
 .dropdown-content-w a {
    font-family: 'Bitter', serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #586BA4;
   padding: .3vw .5vw;
   display: block;
