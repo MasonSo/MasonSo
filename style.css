@@ -203,6 +203,7 @@ font-family: 'Nunito', sans-serif;
 .dropdown-content-w {
   
   display: none;
+  cursor: none;
   position: fixed;
   background-color: transparent;
   min-width: 1vw;
@@ -219,17 +220,20 @@ font-family: 'Nunito', sans-serif;
    font-family: 'Bitter', serif;
   font-size: 1.5vw;
   color: #586BA4;
-  padding: .3vw .5vw;
+  padding: 1vw .5vw;
   display: block;
+  cursor: none;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content-w a:hover {
     color: #B46005;
+  cursor: none;
 }
 
 .dropdown-content-w a:hover::after {
    content: "!";
+  cursor: none;
 }
 
 /* Show the dropdown menu on hover */
