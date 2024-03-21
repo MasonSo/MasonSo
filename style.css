@@ -204,7 +204,7 @@ font-family: 'Nunito', sans-serif;
   
   display: none;
   position: fixed;
-  background-color: #D5C6AF;
+  background-color: transparent;
   min-width: 1vw;
   left: 2.5vw;
    top: 8vw;
